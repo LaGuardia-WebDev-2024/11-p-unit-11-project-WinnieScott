@@ -27,41 +27,54 @@ Select ONE Additional
     <button id="mem3-button">Album 3</button>
     
     <ol>
-      <li>
+     <div id="color1">
         <h3 id="mem1">Album 1</h3>
-        <p id="m1">More about this memory.</p>
-      </li>
+        <h4 class="m1">Jagged Little Pill by Alanis Morissette</h4>
+        <img id= "i1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbjlKOVuQOyuEqgKKf8Ao92At1NHypaPLjuw&s">
+        <p class="m1">stuff and things</p> 
+     </div>
 
-      <li>
+      
         <h3 id="mem2">Album 2</h3>
-        <p id="m2">More about this memory.</p>
-      </li>
+        <h4 class="m2">Graceland by Paul Simon</h4>
+        <img id="i2" src = "https://bestclassicbands.com/wp-content/uploads/2023/07/Paul-Simon-graceland-1.jpg">
+        <p class="m2">more stuff and things</p>
+      
 
-      <li>
+      
         <h3 id="mem3">Album 3</h3>
-        <p id="m3">More about this memory</p>
-      </li>
+        <h4 class="m3">Five Seconds Flat by Lizzie McAlpine</h4>
+        <img id="i3" src="https://i0.wp.com/machronicle.com/wp-content/uploads/2024/05/25.png?fit=1600%2C900&ssl=1">
+        <p class="m3">even more stuff and things</p>
+     
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-     $("#m1").hide();
+     $(".m1").hide();
+     $("img").hide();
+     $("#color1").hide();
       // ======================== Button #1
       $("#mem1-button").click(function () {
         $("#mem1").css("color", "purple");
-          $("#m1").slideDown();
+          $(".m1").slideDown();
+          $("#i1").slideDown();
       });
-     $("#m2").hide();
+     $(".m2").hide();
+     $("img").hide();
       // ======================== Button #2
       $("#mem2-button").click(function () {
         $("#mem2").css("color", "blue");
-          $("#m2").slideDown();
+          $(".m2").slideDown();
+          $("#i2").slideDown();
       });
-     $("#m3").hide();
+     $(".m3").hide();
+     $("img").hide();
       // ======================== Button #3
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
-          $("#m3").slideDown();
+          $(".m3").slideDown();
+          $("#i3").show();
      });
       
 
