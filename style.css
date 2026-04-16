@@ -11,12 +11,40 @@ h1 {
   font-family: "Poetsen One", sans-serif;
 }
 
+h4{
+  font-size:20px;
+}
+
 img{
-  width:200px;
+  width:150px;
+  border:5px, solid;
 }
 
 body{
   text-align:center;
 }
 
-#color
+#color1{
+  padding:2px;
+  background-color:rgb(66, 223, 235);
+}
+#color2{
+  background-color:rgb(231, 216, 146);
+  padding:2px;
+}
+#color3{
+  background-color:rgb(201, 99, 16);
+  padding:2px;
+}
+
+#mem1-button{
+ background-color: rgb(66, 223, 235);
+}
+
+#mem2-button{
+  background-color:rgb(231, 216, 146);
+}
+
+#mem3-button{
+  background-color:rgb(201, 99, 16);
+}
