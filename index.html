@@ -19,6 +19,9 @@ Select ONE Additional
     <meta charset="utf-8" />
     <title>Unit 11 Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
   </head>
   <body>
   <h1>My Favorite Albums rn</h1>
@@ -29,32 +32,37 @@ Select ONE Additional
     <ol>
       <h3 id="mem1">Album 1</h3>
      <div id="color1">
-        <h4 class="m1">Jagged Little Pill by Alanis Morissette</h4>
+        <h4 class="m1"><em>Jagged Little Pill </em> by Alanis Morissette</h4>
         <img id= "i1" src="https://upload.wikimedia.org/wikipedia/en/4/47/Alanis_Morissette_-_Jagged_Little_Pill.jpg">
-        <p class="m1">My favorite lyric: <br> "Do I wear you out <br> you must wonder why I'm relentless and all strung out <br> I'm consumed my the chill of solitary"</p> 
+        <p class="m1">My Favorite Lyric: <br> "Do I wear you out <br> you must wonder why I'm relentless and all strung out <br> I'm consumed my the chill of solitary"</p>
+        <p class = "m1"> (Morissette, Alanis. “Alanis Morissette – All I Really Want Lyrics | 
+        <br>Genius Lyrics.” Genius, 13 June 1995)</p>
+        <p class = "m1">My Favorite Song : <br><strong>All I Really Want</strong></p> 
      </div>
 
       
         <h3 id="mem2">Album 2</h3>
        <div id="color2">
-        <h4 class="m2">Graceland by Paul Simon</h4>
+        <h4 class="m2"><em>Graceland</em> by Paul Simon</h4>
         <img id="i2" src = "https://upload.wikimedia.org/wikipedia/commons/c/c3/Graceland_cover_-_Paul_Simon.jpg">
-        <p class="m2">My favorite lyric: <br> "Staccato signals of constant information <br> a loose affiliation of millionares and billionares and baby <br> these are the days of miracle and wonder"</p>
+        <p class="m2">My Favorite Lyric: <br> "Staccato signals of constant information <br> a loose affiliation of millionares and billionares and baby <br> these are the days of miracle and wonder"</p>
+        <p class = "m2">My Favorite Song : <br><strong>You Can Call Me Al</strong></p>
       </div>
 
       
         <h3 id="mem3">Album 3</h3>
        <div id="color3">
-        <h4 class="m3">Five Seconds Flat by Lizzie McAlpine</h4>
+        <h4 class="m3"><em>Five Seconds Flat</em> by Lizzie McAlpine</h4>
         <img id="i3" src="https://i.scdn.co/image/ab67616d0000b2731e7c02b74d1beefca663be04">
-        <p class="m3">My favorite lyric:<br> "I feel more free than I have in years <br> six feet in the ground"</p>
+        <p class="m3">My Favorite Lyric:<br> "I feel more free than I have in years <br> six feet in the ground"</p>
+        <p class = "m3">My Favorite Song : <br> <strong>Doomsday</strong></p>
        </div>
 
       <button id="mem4-button">Bonus</button>
      <div id="color4">
-        <h4 class="m4">You Look Pretty Sad For A Girl So In Love <br> (not out yet, only single has been released)</h4>
+        <h4 class="m4"><em>You Look Pretty Sad For A Girl So In Love</em> by Olivia Rodrigo<br> (not out yet, only single has been released)</h4>
         <img id= "i4" src="https://images.genius.com/f592916b20903934e7e85952dd4a8480.1000x1000x1.png">
-        <p class="m4">My favorite lyric (so far): <br> "All pressed up in the bathroom line <br> You're looking like an angel on the walls of Versailles"</p> 
+        <p class="m4">My Favorite Lyric (so far): <br> "All pressed up in the bathroom line <br> You're looking like an angel on the walls of Versailles"</p> 
      </div>
     </ol>
 
@@ -104,13 +112,26 @@ Select ONE Additional
           $("#i3").show();
           mem3count = 1;
         }
+        else if (mem3count == 1){
+          $(".m3").hide();
+          $("#i3").hide();
+          mem3count = 0;
+        }
      });
      $(".m4").hide();
      $("img").hide();
       // ======================== Button #3
+      var mem4count = 0;
       $("#mem4-button").click(function () {
+        if(mem4count == 0){
           $(".m4").slideDown();
           $("#i4").show();
+          mem4count = 1;}
+        else if (mem4count == 1){
+          $(".m4").hide();
+          $("#i4").hide();
+          mem4count = 0;
+        }
       });
 
     </script>
